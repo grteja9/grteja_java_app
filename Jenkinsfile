@@ -17,13 +17,14 @@ pipeline{
     }
 }
         stage('Unit Test Maven'){
-            dir('customworkspace')
+            dir('customworkspace'){
             steps{
                 script{
                     mvnTest()
         }
 
  }
+            }
 }
 
         stage('Integration Test Maven'){
