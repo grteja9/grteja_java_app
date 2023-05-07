@@ -1,10 +1,11 @@
 @Library('my-shared-library') _
-customWorkspace '/opt/Workspace/'
+customWorkspace =/opt/Workspace/grteja_java_app/
 pipeline{
     agent any
 
     stages{
 stage('Git Checkout'){
+    dir(customWorkspace)
     steps{
         script{
             gitCheckout(
