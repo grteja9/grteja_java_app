@@ -1,5 +1,5 @@
 @Library('my-shared-library') _
-customwokspace='/opt/Workspace/grteja_java_app/pom.xml'
+
 pipeline{
     
         agent any
@@ -19,13 +19,13 @@ pipeline{
         stage('Unit Test Maven'){
             
             steps{
-                dir('customworkspace'){
+                
                 script{
                     mvnTest()
         }
 
  
-                }
+                
  }
 
             
