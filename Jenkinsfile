@@ -1,5 +1,5 @@
 @Library('my-shared-library') _
-customwokspace='/opt/Workspace/grteja_java_app'
+customwokspace='/opt/Workspace/grteja_java_app/pom.xml'
 pipeline{
     
         agent any
