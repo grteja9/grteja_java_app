@@ -5,8 +5,8 @@ pipeline{
 
     stages{
 stage('Git Checkout'){
-    dir(customWorkspace)
     steps{
+        dir(customWorkspace)
         script{
             gitCheckout(
                 branch: "main",
