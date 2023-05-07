@@ -5,7 +5,6 @@ pipeline{
     dir('customWorkspace')
       stages{
         stage('Git Checkout'){
-            dir('customWorkspace')
             steps{
                 script{
                         
@@ -17,7 +16,6 @@ pipeline{
     }
 }
         stage('Unit Test Maven'){
-            dir('customWorkspace')
             steps{
                 script{
                     
