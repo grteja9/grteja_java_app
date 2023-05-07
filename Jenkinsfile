@@ -1,5 +1,5 @@
 @Library('my-shared-library') _
-
+customWorkspace '/opt/Workspace/'
 pipeline{
     agent any
 
