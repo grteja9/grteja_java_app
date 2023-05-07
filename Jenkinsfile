@@ -1,7 +1,7 @@
 @Library('my-shared-library') _
 customWorkspace='/opt/Workspace/grteja_java_app/'
 pipeline{
-    dir('customWorkspace')
+    
         agent any
     
             stages{
