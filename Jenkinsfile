@@ -1,15 +1,13 @@
 @Library('my-shared-library') _
-import jenkins.model.*
 customWorkspace="/opt/Workspace/grteja_java_app/"
 pipeline{
     agent any
-    
-    stages{
+      stages{
         stage('Git Checkout'){
             steps{
                 script{
-                    dir(customWorkspace)
-                    gitCheckout(
+                        dir('customWorkspace')
+                        gitCheckout(
                         branch: "main",
                         url:"https://github.com/grteja9/Jenkins_Shared_Lib.git"
             )
